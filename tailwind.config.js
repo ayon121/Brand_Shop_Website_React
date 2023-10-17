@@ -5,8 +5,14 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily : {
+        Mukta: "'Mukta', sans-serif",
+        Script : "'Kaushan Script', cursive;"
+      }
+    },
   },
+
   plugins: [require("daisyui")],
 }
 
