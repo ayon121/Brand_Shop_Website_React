@@ -3,7 +3,7 @@
 
 const Navbar = () => {
     return (
-        <div className="py-2 px-4 sticky top-0  bg-black font-Mukta">
+        <div className="py-2 px-4 sticky top-0 bg-black font-Mukta">
             <div className="navbar max-w-7xl mx-auto ">
                 <div className="navbar-start">
                     <div className="dropdown">
