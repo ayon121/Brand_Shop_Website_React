@@ -1,10 +1,15 @@
 
 // import PropTypes from 'prop-types';
 
+import Banner from "../Banner/Banner";
+import Brands from "../Brands/Brands";
+// import Navbar from "../Shared/Navbar";
+
 const Home = () => {
     return (
         <div>
-            <h1 className="font-Script">Home</h1>
+            <Banner></Banner>
+            <Brands></Brands>
         </div>
     );
 };
