@@ -16,19 +16,24 @@ const Authproviders =({children}) => {
         const Unsubscribe = onAuthStateChanged(auth , currentUser => {
             console.log('user in auth state changes' , currentUser)
             setuser(currentUser)
+            setloading(false)
+
         })
 
         return () => {
             Unsubscribe()
+            
         }
     },[])
 
     
     const createUser = (email , password) => {
+        setloading(true)
         return createUserWithEmailAndPassword(auth , email , password)
     }
 
     const loginUser = (email , password) => {
+        setloading(true)
         return signInWithEmailAndPassword(auth , email , password)
     }
 
@@ -40,6 +45,7 @@ const Authproviders =({children}) => {
     }
 
     const logout = () => {
+        setloading(true)
         return signOut(auth)
     }
 
@@ -50,6 +56,7 @@ const Authproviders =({children}) => {
         loginUser,
         GoogleLogin,
         logout,
+        loading,
     }
 
     return (

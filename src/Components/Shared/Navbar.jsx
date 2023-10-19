@@ -18,7 +18,7 @@ const Navbar = () => {
         <li className="text-lg"><NavLink to="/" className={({ isActive }) => isActive ? 'text-black bg-white  text-xl' : 'bg-transparent'}>Home</NavLink></li>
         <li className="text-lg"><NavLink to="/About" className={({ isActive }) => isActive ? 'text-black bg-white text-xl' : 'bg-transparent'}>About Us</NavLink></li>
         {
-            user && <li className="text-lg"><NavLink to="/VIPOffers" className={({ isActive }) => isActive ? 'v text-xl' : 'bg-transparent'}>VIPOffers</NavLink></li>
+            user && <li className="text-lg"><NavLink to="/VIPOffers" className={({ isActive }) => isActive ? 'v text-xl' : 'bg-transparent'}>AddProduct</NavLink></li>
         }
         {
             user && <li className="text-lg"><NavLink to="/Contact" className={({ isActive }) => isActive ? 'text-black bg-white text-xl' : 'bg-transparent'}>Contact Us</NavLink></li>
