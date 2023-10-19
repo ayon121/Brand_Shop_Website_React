@@ -14,6 +14,7 @@ import Login from './Components/Users_Functions/Login';
 import Error from './Components/Pages/Error';
 import AddProduct from './Components/Pages/AddProduct';
 import BrandDetails from './Components/Brands/BrandDetails';
+import ProductDetails from './Components/Product/ProductDetails';
 
 const router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const router = createBrowserRouter([
       {
         path : "/brand/:brandname",
         element : <BrandDetails></BrandDetails>
+      },
+      {
+        path : "/productDetails/:id" ,
+        element : <ProductDetails></ProductDetails>
       }
     ]
   },
