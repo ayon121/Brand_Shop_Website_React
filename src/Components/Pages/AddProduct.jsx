@@ -47,7 +47,7 @@ const AddProduct = () => {
             </div>
             <div className='font-Bebas min-h-screen bg-base-200 px-4'>
 
-                <div className="w-3/4 border-4  pt-3 font-Mukta mx-auto">
+                <div className="w-3/4 pt-3 font-Mukta mx-auto">
                     <h1 className='text-3xl md:text-4xl text-center pt-3 pb-1 font-Script'>Add Product</h1>
                     <form className=" " onSubmit={handleAddProduct}>
                         <div>
