@@ -104,7 +104,7 @@ const AddProduct = () => {
                                             <option value="Samsung">Samsung</option>
                                             <option value="Sony">Sony</option>
                                             <option value="Google">Google</option>
-                                            <option value="Samsung">Intel</option>
+                                            <option value="Intel">Intel</option>
                                             <option value="Tesla">Tesla</option>
                                         </select>
                                     </div>
