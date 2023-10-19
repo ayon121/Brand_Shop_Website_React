@@ -1,11 +1,14 @@
 
 // import PropTypes from 'prop-types';
 
-import { ToastContainer } from "react-toastify";
+import { ToastContainer, toast } from "react-toastify";
 import Navbar from "../Shared/Navbar";
 
-const AddProduct = () => {
+// react toast
+import 'react-toastify/dist/ReactToastify.css';
 
+
+const AddProduct = () => {
     const handleAddProduct = e => {
         e.preventDefault()
         const form = new FormData(e.currentTarget);
@@ -16,7 +19,26 @@ const AddProduct = () => {
         const category = form.get('category')
         const description = form.get('description')
         const brands = form.get('brands')
-        console.log(name , price , image , ratings ,category ,description,brands);
+        const Products = {name , price , image , ratings ,category ,description,brands};
+        console.log(Products);
+
+        fetch('http://localhost:5000/productDetails', 
+           {
+            method : 'POST',
+            headers : {
+                'content-type' : 'application/json'
+            },
+            body : JSON.stringify(Products)
+           } 
+        )
+        .then(res => res.json())
+        .then(data => {
+            if(data.insertedId){
+                toast("Product Added Successfully")
+                form.reset()
+            }
+        })
+
     }
     return (
         <div>

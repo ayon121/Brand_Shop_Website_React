@@ -13,6 +13,7 @@ import Authproviders from './Providers/AuthProviers';
 import Login from './Components/Users_Functions/Login';
 import Error from './Components/Pages/Error';
 import AddProduct from './Components/Pages/AddProduct';
+import BrandDetails from './Components/Brands/BrandDetails';
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const router = createBrowserRouter([
       {
         path : "/addproduct" , 
         element : <AddProduct></AddProduct>
+      },
+      {
+        path : "/brand/:brandname",
+        element : <BrandDetails></BrandDetails>
       }
     ]
   },
