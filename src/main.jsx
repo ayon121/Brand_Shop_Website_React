@@ -12,6 +12,7 @@ import Register from './Components/Users_Functions/Register';
 import Authproviders from './Providers/AuthProviers';
 import Login from './Components/Users_Functions/Login';
 import Error from './Components/Pages/Error';
+import AddProduct from './Components/Pages/AddProduct';
 
 const router = createBrowserRouter([
   {
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
       {
         path : "/login" ,
         element : <Login></Login>
+      },
+      {
+        path : "/addproduct" , 
+        element : <AddProduct></AddProduct>
       }
     ]
   },
