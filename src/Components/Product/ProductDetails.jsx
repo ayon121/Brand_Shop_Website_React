@@ -17,8 +17,8 @@ const ProductDetails = ()=> {
             .then(data => setProduct(data))
     }, [id])
     const { name, price, image, description, category, brands  } = currentproduct
-    const email = user.email
-    const userid = email.slice(0,5)
+    const email = user?.email
+    const userid = email?.slice(0,5)
     
     const Cart = {...currentproduct , userid}
 
