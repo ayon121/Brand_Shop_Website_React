@@ -18,10 +18,12 @@ const ProductDetails = ()=> {
     }, [id])
     const { name, price, image, description, category, brands  } = currentproduct
     const email = user.email
-    const Cart = {...currentproduct , email}
+    const userid = email.slice(0,5)
+    
+    const Cart = {...currentproduct , userid}
 
     const addtocart = (Cart) => {
-        fetch('http://localhost:5000/Mycart', 
+        fetch('http://localhost:5000/Mycarts', 
            {
             method : 'POST',
             headers : {

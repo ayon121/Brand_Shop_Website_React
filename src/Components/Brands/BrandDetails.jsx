@@ -13,10 +13,9 @@ const BrandDetails = () => {
         fetch(`http://localhost:5000/poducts/${brandname}`)
             .then(res => res.json())
             .then(data => setProduct(data))
-    }, [])
+    }, [brandname])
 
-    console.log(products);
-
+    
     return (
         <div>
             <div className='h-44'>

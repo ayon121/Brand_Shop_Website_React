@@ -7,7 +7,8 @@ import { Link, NavLink } from "react-router-dom";
 
 const Navbar = () => {
     const { user, logout } = useContext(AuthContext)
-
+    const email = user.email
+    const userid = email.slice(0,5)
     const handlelogOut = () => {
         logout()
             .then()
@@ -18,7 +19,10 @@ const Navbar = () => {
         <li className="text-lg"><NavLink to="/" className={({ isActive }) => isActive ? 'text-black bg-white  text-xl' : 'bg-transparent'}>Home</NavLink></li>
         {/* <li className="text-lg"><NavLink to="/About" className={({ isActive }) => isActive ? 'text-black bg-white text-xl' : 'bg-transparent'}>About Us</NavLink></li> */}
         {
-           user &&  <li className="text-lg"><NavLink to="/addproduct" className={({ isActive }) => isActive ? 'text-black bg-white text-xl' : 'bg-transparent'}>AddProduct</NavLink></li>
+           <li className="text-lg"><NavLink to="/addproduct" className={({ isActive }) => isActive ? 'text-black bg-white text-xl' : 'bg-transparent'}>AddProduct</NavLink></li>
+        }
+        {
+           user &&  <li className="text-lg"><NavLink to={`/mycart/${userid}`} className={({ isActive }) => isActive ? 'text-black bg-white text-xl' : 'bg-transparent'}>My Cart</NavLink></li>
         }
         
     </>
