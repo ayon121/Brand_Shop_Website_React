@@ -14,9 +14,9 @@ const Product = ({ product }) => {
                 <p className='text-orange-500 flex flex-row items-center justify-center'>({ratings} <AiFillStar></AiFillStar>)</p></h2>
                 <p>${price}</p>
                 
-                <div className="card-actions">
+                <div className="card-actions flex flex-row">
                     <Link to={`/productDetails/${_id}`}><button className="btn bg-black text-white">View Details</button></Link>
-                    <button className="btn bg-black text-white">Update Details</button>
+                    <Link to={`/productUpdate/${_id}`}><button className="btn bg-black text-white">Update Details</button></Link>
 
                 </div>
             </div>
