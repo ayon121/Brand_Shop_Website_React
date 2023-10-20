@@ -20,7 +20,7 @@ const ProductUpdate = () => {
         const description = form.get('description')
         const brands = form.get('brands')
         const UpdateProduct = {name , price , image , ratings ,category ,description,brands};
-        fetch(`http://localhost:5000/products/${id}` , {
+        fetch(`https://brand-shop-server-side-k1n8nlw6c-ayons-projects.vercel.app/products/${id}` , {
             method : 'PUT', 
             headers : {
                 'content-type' : 'application/json',

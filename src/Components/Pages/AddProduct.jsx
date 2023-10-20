@@ -22,7 +22,7 @@ const AddProduct = () => {
         const Products = {name , price , image , ratings ,category ,description,brands};
         console.log(Products);
 
-        fetch('http://localhost:5000/productDetails', 
+        fetch('https://brand-shop-server-side-k1n8nlw6c-ayons-projects.vercel.app/productDetails', 
            {
             method : 'POST',
             headers : {

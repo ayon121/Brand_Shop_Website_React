@@ -52,12 +52,12 @@ const router = createBrowserRouter([
       {
         path : "/productUpdate/:id" ,
         element : <PrivateRoute><ProductUpdate></ProductUpdate></PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/product/${params.id}`)
+        loader: ({params}) => fetch(`https://brand-shop-server-side-k1n8nlw6c-ayons-projects.vercel.app/product/${params.id}`)
       },
       {
         path : "/mycart/:id",
         element :<PrivateRoute> <Mycart></Mycart></PrivateRoute>,
-        loader: ({params}) => fetch(`http://localhost:5000/carts/${params.id}`)
+        loader: ({params}) => fetch(`https://brand-shop-server-side-k1n8nlw6c-ayons-projects.vercel.app/carts/${params.id}`)
 
       }
     ]
