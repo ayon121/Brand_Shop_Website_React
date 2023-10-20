@@ -12,7 +12,7 @@ const ProductDetails = ()=> {
         fetch(`http://localhost:5000/product/${id}`)
             .then(res => res.json())
             .then(data => setProduct(data))
-    }, [])
+    }, [id])
 
     const { name, price, image, description, category, brands  } = currentproduct
     return (
