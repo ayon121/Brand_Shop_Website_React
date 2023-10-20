@@ -5,6 +5,7 @@ import { useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Product from "../Product/Product";
 import Navbar from "../Shared/Navbar";
+import Advertisment from "../Advertisment/Advertisment";
 const BrandDetails = () => {
     const { brandname } = useParams()
     const [products, setProduct] = useState([])
@@ -27,6 +28,7 @@ const BrandDetails = () => {
                     products.map(product => <Product key={product.id} product={product}></Product>)
                 }
             </div>
+            <Advertisment></Advertisment>
         </div>
     );
 };
