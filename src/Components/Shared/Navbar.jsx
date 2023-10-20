@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { AuthContext } from "../../Providers/AuthProviers";
 import { Link, NavLink } from "react-router-dom";
 import { CgProfile } from 'react-icons/cg';
+import DarkMode from "../Darkmode/DarkMode";
 const Navbar = () => {
     const { user, logout } = useContext(AuthContext)
     const email = user?.email
@@ -55,7 +56,7 @@ const Navbar = () => {
 
                             }
 
-
+                            <DarkMode></DarkMode>
                         </ul>
                     </div>
                 </div>
