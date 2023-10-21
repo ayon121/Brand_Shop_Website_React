@@ -11,7 +11,7 @@ const BrandDetails = () => {
     const [products, setProduct] = useState([])
 
     useEffect(() => {
-        fetch(`https://brand-shop-server-side-k1n8nlw6c-ayons-projects.vercel.app/poducts/${brandname}`)
+        fetch(`https://brand-shop-server-side-31efspzvl-ayons-projects.vercel.app/poducts/${brandname}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [brandname])

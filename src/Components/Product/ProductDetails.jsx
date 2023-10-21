@@ -12,7 +12,7 @@ const ProductDetails = ()=> {
     const [currentproduct, setProduct] = useState([])
     const { user } = useContext(AuthContext)
     useEffect(() => {
-        fetch(`https://brand-shop-server-side-k1n8nlw6c-ayons-projects.vercel.app/product/${id}`)
+        fetch(`https://brand-shop-server-side-31efspzvl-ayons-projects.vercel.app/product/${id}`)
             .then(res => res.json())
             .then(data => setProduct(data))
     }, [id])
@@ -23,7 +23,7 @@ const ProductDetails = ()=> {
     const Cart = {...currentproduct , userid}
 
     const addtocart = (Cart) => {
-        fetch('https://brand-shop-server-side-k1n8nlw6c-ayons-projects.vercel.app/Mycarts', 
+        fetch('https://brand-shop-server-side-31efspzvl-ayons-projects.vercel.app/Mycarts', 
            {
             method : 'POST',
             headers : {
