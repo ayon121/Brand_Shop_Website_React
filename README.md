@@ -21,7 +21,7 @@ Live Link :
     Live Link
 </h1>
 <p>
-    Visit Now : <a href="https://brand-shop-17027.web.app/">Hotel Vue</a><br>
+    Visit Now : <a href="https://brand-shop-17027.web.app/">Brand Shop</a><br>
     Server Repo : <a href="https://github.com/ayon121/Brand_Shop_Server_Node.git">Server Code</a>
 </p>
 <hr>
